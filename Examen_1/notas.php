@@ -33,18 +33,22 @@
     } else {
         echo "Suspenso <br>";
     }
-
+    
+    // Bucle if para comprobar si el alumno esta matriculado
     if ($es_matriculado == true ){
         echo "Estado: Alumno Matriculado <br>";
     } else {
         echo "ERROR: Alumno no matriculado <br>";
     }
 
+
+    // Generar una tabla con 5 filas y 2 columnas
     echo "<table border='1'>";
     echo "<tr><td>Fila numero</td><td>Numero</td></tr>";
     
     $i = 1;
     
+    // Bucle While para generar las filas de la tabla
     while ($i <= 5) {
         echo "<tr>";
         echo "<td>Fila numero</td>";
